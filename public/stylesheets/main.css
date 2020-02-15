@@ -9,3 +9,85 @@
 .thumbnail .caption-full {
     padding: 9px;
 }
+
+.booth {
+  width: 400px;
+  background: #ccc;
+  border: 10px solid #ddd;
+}
+
+#webcam-container {
+  width: 370px;
+  background: #ccc;
+  text-align: center;
+  margin: auto;
+}
+
+body {
+  background: url(https://i.ytimg.com/vi/4l6J5jhRgos/maxresdefault.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title {
+  color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+}
+
+.button {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+
+  p {
+   	font-family: 'Roboto';
+	  text-align: center;
+  	text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-radius: 50%;
+    background-color: darken(#f1c40f, 20%);
+    opacity: 0.4;
+    bottom: -30px;
+  }
+}
+
+
+#label-container {
+  padding-top: 30px;
+  width: 370px;
+  background: rgb(0,0,0,0);
+  text-align: center;
+  margin: auto;
+  float: left;
+  color: white;
+}
+
+#label-container2 {
+  padding-top: 30px;
+  width: 370px;
+  background: rgb(0,0,0,0);
+  text-align: center;
+  margin: auto;
+  float: left;
+  color: white;
+}
