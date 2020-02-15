@@ -74,20 +74,27 @@ body {
 
 #label-container {
   padding-top: 30px;
-  width: 370px;
+  width: 600px;
   background: rgb(0,0,0,0);
   text-align: center;
   margin: auto;
-  float: left;
   color: white;
+  font-size: 30px;
 }
 
 #label-container2 {
   padding-top: 30px;
-  width: 370px;
+  width: 600px;
   background: rgb(0,0,0,0);
   text-align: center;
   margin: auto;
-  float: left;
   color: white;
+  font-size: 30px;
+}
+
+span {
+  font: 2em "Museo 700";
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 35px;
 }

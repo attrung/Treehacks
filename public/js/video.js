@@ -38,22 +38,22 @@ async function init() {
     // append elements to the DOM
     document.getElementById("webcam-container").appendChild(webcam.canvas);
     labelContainer = document.getElementById("label-container2");
-    for (let i = 0; i < maxPredictions; i++) { // and class labels
+    // for (let i = 0; i < maxPredictions; i++) { // and class labels
        new_elem = document.createElement("div")
        new_elem.style.float = "left";
         labelContainer.appendChild(new_elem);
-    }
+    //}
 
     labelContainer2 = document.getElementById("label-container")
-    for (let i = 0; i < maxPredictions2; i++) { // and class labels
+    // for (let i = 0; i < maxPredictions2; i++) { // and class labels
       new_elem = document.createElement("div")
-      // new_elem.style.float = "left";
+       new_elem.style.float = "left";
       labelContainer2.appendChild(new_elem);
-    }
+    //}
 }
 
 async function loop() {
-    webcam.update(1); // update the webcam frame
+    webcam.update(); // update the webcam frame
     await predict();
     window.requestAnimationFrame(loop);
 }
@@ -62,17 +62,20 @@ async function loop() {
 async function predict() {
     // predict can take in an image, video or canvas html element
     const prediction = await model.predict(webcam.canvas);
+    prob = []
     for (let i = 0; i < maxPredictions; i++) {
-        const classPrediction =
-            prediction[i].className + ": " + prediction[i].probability.toFixed(2) + "  /  ";
-        labelContainer.childNodes[i].innerHTML = classPrediction;
+        prob.push(prediction[i].probability)
     }
+    k = Math.max(...prob)
+    m = prob.indexOf(k)
+    labelContainer.childNodes[0].innerHTML = "You should put it into <span>" + prediction[m].className + "</span>"
 
     const prediction2 = await model2.predict(webcam.canvas);
+    prob = []
     for (let i = 0; i < maxPredictions2; i++) {
-        const classPrediction2 =
-            prediction2[i].className + ": " + prediction2[i].probability.toFixed(2);
-          console.log(classPrediction2)
-        labelContainer2.childNodes[i].innerHTML = classPrediction2;
+        prob.push(prediction2[i].probability)
     }
+    k = Math.max(...prob)
+    m = prob.indexOf(k)
+    labelContainer2.childNodes[0].innerHTML = "I believe this is a <span>" + prediction2[m].className +"</span>"
 }
