@@ -20,6 +20,10 @@ app.get("/main", function(req, res){
   res.render("main");
 })
 
+app.get("/map", function(req, res){
+  res.render("map")
+})
+
 app.listen(4000, '127.0.0.1', function(){
   console.log("Server started!");
 })
