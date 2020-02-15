@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SafePath </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/themes/light/main.css">
+        <script src="https://js.arcgis.com/4.13/"></script>
+<script>
+require([
+    "esri/Map",
+    "esri/views/MapView"
+  ], function(Map, MapView) {
+
+  var map = new Map({
+    basemap: "topo-vector"
+  });
+
+  var view = new MapView({
+    container: "viewDiv",
+    map: map,
+    center: [-122.411095, 37.782969], // longitude, latitude
+    zoom: 13
+  });
+});
+</script>
+</head>
+<body>
+<div id="viewDiv"></div>
+</body>
+</html>

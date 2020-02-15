@@ -9,3 +9,14 @@
 .thumbnail .caption-full {
     padding: 9px;
 }
+
+html, body, #viewDiv {
+  height: 100%;
+  margin: 0;
+  width: 90%;
+  padding: 50px;
+}
+
+#viewDiv {
+  border: 3px black solid
+}
