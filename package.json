@@ -4,6 +4,8 @@
   "description": "App that finds best way to travel",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "deplot": "gcloud app deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

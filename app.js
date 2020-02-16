@@ -24,6 +24,6 @@ app.get("/map", function(req, res){
   res.render("main2")
 })
 
-app.listen(4000, '127.0.0.1', function(){
+app.listen(process.env.PORT, process.env.IP, function(){
   console.log("Server started!");
 })
