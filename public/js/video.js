@@ -4,7 +4,8 @@ var button = document.getElementById("button")
 var video_thread = document.getElementById("webcam-container")
 // the link to your model provided by Teachable Machine export panel
 const URL = "https://teachablemachine.withgoogle.com/models/feOWq1oh/";
-const URL2 = "https://teachablemachine.withgoogle.com/models/wpWWbiOL/"
+//const URL2 = "https://teachablemachine.withgoogle.com/models/wpWWbiOL/";
+const URL2 = "https://teachablemachine.withgoogle.com/models/LzI3HNih/"
 
 let model, webcam, labelContainer, maxPredictions;
 let model2, labelContainer2, maxPredictions2;
