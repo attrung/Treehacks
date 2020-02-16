@@ -19,8 +19,8 @@ app.get("/home", function(req, res){
 });
 
 app.get('/houndifyAuth', houndifyExpress.createAuthenticationHandler({
-  clientId:  "j4_kxRXSMt6bY172r1ydYg==",
-  clientKey: "4WUtyp6iUE90_mYtyzW4rtAI2LRERnROhKzaHlm_MffcGRii9mtliOtouNS1z3Lv834p1G1NdqmE3OFVhdX3Cw=="
+  clientId:  "zps_7PSMlmeNbpVdeQfi5g==",
+  clientKey: "xGW0T-wp27AT6ye6gARikAtHwpAttJw6Wo0qjezCWqrRHVjvM66YCNLRhD6WfNStA0NfJoke67kJELULzCIQTg=="
 }));
 
 //proxies text requests
