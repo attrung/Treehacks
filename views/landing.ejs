@@ -1,19 +1,181 @@
-<%- include('partials/header') -%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Trashier </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+				<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+		    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
+		    <link rel="stylesheet" href="css/bootstrap.min.css">
+		    <link rel="stylesheet" href="css/jquery-ui.css">
+		    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+		    <link rel="stylesheet" href="css/aos.css">
+		    <link rel="stylesheet" href="css/style.css">
+    </head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="stylesheets/landing.css">
-<div class="container">
- 	<div class="row">
- 		<div class="col-lg-12">
- 			<div class="content">
- 				<h1> Trashier </h1>
- 				<h3> Classify your trash properly so you don't become one yourself </h3>
- 				<hr>
- 				<a href="/main" class="btn btn-default btn-lg"><i class="fa fa-tree"></i> Get Started! </a>
- 			</div>
- 		</div>
- 	</div>
- </div>
-<script src="scripts/background.js"></script>
+
+	<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="site-wrap"  id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-md-3 col-xl-4  d-block">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Trash Classifier</a></h1>
+          </div>
+
+          <div class="col-12 col-md-9 col-xl-8 main-menu">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#features-section" class="nav-link">Features</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0" ><a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <div class="site-blocks-cover" style="overflow: hidden;">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-12" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
+
+            <img src="images/recycle.png" alt="Image" class="img-fluid img-absolute">
+
+            <div class="row mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-6 mr-auto">
+                <h1>Guiding the Public on how to properly be sustainable one trash at a time.</h1>
+                <p class="mb-5">The web application uses enterprise class AI algorithms to classify types of trash to its appropriate category for disposal. The technology can be implemented on trashcans to guide people put trash in the right place.</p>
+                <div>
+                  <a href="/main" class="btn btn-primary mr-2 mb-2">Test the Program</a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section" id="features-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center text-center" data-aos="fade-up" >
+          <div class="col-7 text-center mb-5">
+            <h2 class="section-title">Features</h2>
+            <p class="lead">An intuitive implementation of crucial information necessary for saving the world and mantaining sanity.</p>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+
+            <div class="unit-4 d-block">
+              <div>
+                <h3>Real Time Imaging</h3>
+                <p>The camera fires immediately and data is captured, analyzed and the results analyzed in real-time before your eyes. The live video feed can be sent over Bluetooth or connected over wifi</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="unit-4 d-block">
+              <div>
+                <h3>AI trained data</h3>
+                <p>The technology uses AI technology to classify the images to their respective categories. The AI model is a multi-label classifier that uses the Google Cloud technology to relay data over the web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up"  data-aos-delay="200">
+            <div class="unit-4 d-block">
+              <div>
+                <h3>Easy to use and implement</h3>
+                <p>The app can be accessed directly from an IoT embedded device or through the link provided with the trained model. Webcams of any size can be used. It is a plug and play machine.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-block">
+              <div>
+                <h3>Easy to understand</h3>
+                <p>The app has a single start button and everything is automatically done in the background. The UI is user experience oriented to suit people of all ages. It does not matter your knowledge background on waste disposal.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-block">
+              <div>
+                <h3>Over 90% accuracy</h3>
+                <p>The testing dataset had an 93% accuracy when compared to the training data as it is founded upon quality data. The accuracy was tested over a wide range of backgrounds and objects both opened and deformed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-block">
+              <div>
+                <h3>Available in many platforms</h3>
+                <p>The app can run as a web app, an android or iOS app or or IoT implemented devices such as microcontrollers. Currenlty, only a web app is in place but multisystem and scalability capabilities are feasible.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row", style="height:80px">
+    <div class="col-md-12" style="background-color: black;">
+      <h5 align="center" class="mb-0" style="margin-top: 30px;">
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Trung and Gacoka
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </h5>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery-ui.js"></script>
+
+  <script src="js/main.js"></script>
 
 <%- include('partials/footer') -%>

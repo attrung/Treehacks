@@ -1,0 +1,327 @@
+2019-08-14 - 3.0.3 (feda35f)
+feda35f (HEAD -> master, origin/master, origin/HEAD) Merge branch 'revert-370de97a' into 'master'
+f2609ba (tag: v3.0.2) 3.0.2
+
+
+2019-08-13 - 3.0.2 (370de97)
+370de97 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'certification-url-support' into 'master'
+29babca 3.0.1
+
+
+2019-07-25 - 3.0.1 (b4d0e71)
+b4d0e71 (HEAD -> master, origin/master, origin/HEAD) Fixed grunt build issues by removing some dead code.
+40516a9 (tag: v3.0.0-alpha.3) Updated version for new documentation, refactored example directory, and react native integration.
+57c9c19 Merge branch 'add-react-native-proxy' into 'master'
+fa2f515 Merge branch 'refactor-examples' into 'master'
+7a459bc 2.3.4
+
+
+2019-03-01 - 2.3.4 (b3c3359)
+b3c3359 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'fix/search-params-parse' into 'master'
+59a73f7 update dev readme more
+6d25eb7 update DEV_README with more testing info
+8c19fa3 update test cmd
+f02567d Merge branch 'master' of web-git-a-3.melodis.com:web-dev/houndify-web-sdk
+6bdad87 update packages to point to houndify-2.3.3
+37e1c72 2.3.3
+
+
+2019-02-25 - 2.3.3 (9aecd67)
+9aecd67 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'fix/chrome-v72-audioContext' into 'master'
+8dba7ac AudioRecorder: audio channel constraint
+4529a05 Replace FileReader with Response for decoding response blob
+c63af85 replace request with axios
+474bfcb Merge branch 'raw-bytes' into 'master'
+26c77e0 small changes
+5cfc545 2.2.0
+e6a578f 2.1.3
+ddf12b2 clean up
+75e76d0 fetch, auth headers, filereader
+5c5f3b4 deps upgrade
+ca67a47 wip
+8c54fcd clean up
+0812a0f 2.1.2
+4e23a8e Merge branch 'readme-improvements' into 'master'
+b83bfd0 deps update
+65c364f package update
+08a667a keep stream
+b32b116 version added to output folder
+c82b813 merge
+1cf93ac rename sdk
+1af3cef error handling
+a741e60 Merge branch 'web-sdk-2.0' into 'master'
+095ac28 new speex + error ws
+d42afd2 clean up
+53261c4 Race condition websocket
+3cb9e30 end of audio state
+4dfba76 remove changelog
+c7e9d9e clean up
+e2cd48e error handling state fix
+2ec1c7a error handling
+5a0f3b6 merge
+3d2faca npm package clean up
+206ca20 1.2.3
+deffce3 headers
+da16b1a version
+26a4aac 1.2.0
+c3ef2c0 readme update
+26966bf support posting text query with request info json in body
+6f647b9 format fix
+a3737e0 bug fix
+831689e readme + client id
+7b6221e override listeners for each request
+f168f63 audio error msg improvement
+2ab8dc5 1.0.7
+35041f6 catch voice errors
+1fbdb19 version
+6a20f88 fixes
+3353876 delete dist
+981a5a6 bignumber
+a5d52e8 bigint in response
+8b7a966 0.4.1
+cdf4853 window location origin fix
+cd7c3cf typo
+3092c19 clean up
+e0877e8 small tweaks
+f6a5d8c clean up
+6ec8008 wss field name
+e3eed13 language fix
+e310b85 language support
+f08d450 small fix
+6068e42 readme
+fecfd41 node voice +
+e4862e7 node voice initial
+b08c0a3 add files
+66492a0 reorganize
+eb9f8e4 0.3.6
+fe42cef clean up + example
+c7912d5 uri fix
+405e64a missing dependency
+71e6b71 update externals
+d58ef16 node support initial
+d8b4c3e 0.3.5
+d95f9f3 new version
+9a5a1cd package fix + crypto
+a549382 webpack test
+8a085e7 uuid version fix
+1295620 request version
+e16e386 0.3.4
+fe0019b fix version
+8ae4c31 0.3.3
+85af5c7 build
+e9cd416 new ws endpoint
+9662723 version
+22ef92f 0.3.2
+dff0055 npm shrinkwrap removed
+b4a53f6 0.3.1
+8b086a2 bug fix
+c32eb62 uglify mange settings
+ab65438 example package update
+fe6444b 0.3.0
+1a06885 dist
+0727729 src + docs + method
+6471626 documentation update
+a42003b renaming + example
+cb7f8fa Refactoring: HoundifyClient class
+d2fb7fa someday
+fb4f5bd refactoring
+59fa1a3 0.2.3
+7f55e5f override voice backend
+3ca6277 0.2.2
+cdb58dc doc fixes + encodeUnicode for headers
+415ad36 docs & example project edit
+f094539 8khz doc edit
+1fd6f1d https doc edit
+2714567 pass nb flag into upload()
+c2a76f9 fixed speex bug
+74cf202 updated soundhound speex to support both 8khz and 16khz
+8f188ad use http server by default
+79a31d2 minor edit
+eb2e4da 0.2.1
+1694a0a soundhound-speex update
+2549cd5 readme edits
+277df68 Readme edit
+0860d55 expose signToken() in hound-web-sdk-node
+1a4b106 add generateAuthHeaders() to hound-web-sdk & grunt task mod
+a213926 Audio file decode error message
+c4383ff revert bundling changes for now
+c74c3b3 better bundling
+50f93ce example project
+6197507 0.2.0
+196a1a0 0.1.8
+f0a6b89 0.1.7
+34a91fc clean up + readme + checks
+6102f8c checks added
+6fa6bb2 cleaner html
+d29d621 script tag fix
+2ae580c initial developer readme
+2a31806 clearer server output
+3d53fff 0.1.6
+dbd746c version
+7016ff1 error handling
+3f46e49 0.1.5
+3ea853e 0.1.4
+e674248 audiocontext init
+fbe03d4 0.1.3
+dad0acd cleanup + readme
+7d0c522 0.1.2
+c108d35 version
+b7d28ee file upload + refactoring
+03bb5fc 0.1.1
+3b5f355 enableVAD flag added
+d1d736e cleanup
+e9a407d error handling
+fd4a232 0.1.0
+3820017 request info fields
+e10c34a 0.0.26
+0eee7a4 this bug
+d272b75 0.0.25
+919705b dist
+a0e4524 0.0.24
+9e6f770 conv state patch
+8687fee 0.0.23
+76d49c2 cleanup
+0eb9252 0.0.22
+c430c2d dist task
+eb01371 dist task
+0a6a79d 0.0.21
+786cab4 Conversation State documentation
+962cce8 external conversation state object
+df67e10 0.0.20
+f962822 destroying voice search object
+867aeb1 0.0.19
+730c6a3 gitignore fix
+49ee896 auth fix
+01b7911 0.0.18
+c7e6f36 grunt tasks
+ec2a3b4 readme
+38056af npmignore check
+fa8098b cleanup
+ba8c3cb cleaned up example
+234ba8f init
+fcb3e4d test publish folder
+98fe8e1 npmignore
+f394038 0.0.17
+3b0caa0 npm ignore
+f65dca4 0.0.16
+3a73b1d grunt fix & cleanup
+9a21c12 publish
+a15af9b initial
+1abb798 0.0.15
+b4b533d optimization
+122b49d 0.0.14
+f3bb675 search type in info object
+53b9796 0.0.13
+6221329 error message format
+37a243f error handling
+0f0db56 0.0.12
+b328547 proxy method
+1058bd9 0.0.11
+6bba897 onAudioFrame listener support added
+95af6df 0.0.10
+d3e9e75 deprecation + logging
+2fed8f3 example server setup
+aa8b681 clean up
+904975c reorganize
+0125f65 0.0.9
+dc1f765 cleanup
+974a770 derequire
+a0550d4 standalone
+1ac01a1 cleanup
+1c0a92f testing module
+3205850 fix
+9eaf8cc name
+083f917 package fix
+c82fba2 package fixed
+6542f73 testing prod
+448f3ef prod
+8a88abc revert uglify
+bbc33b8 revert
+4e414a8 minify & comments
+16757c5 partial transcripts always on, no response otherwise
+91c2ebd preventing exception on safari
+63fd03f cleanup
+37e0c96 revert ok hound
+4f662df ok hound initial
+ea125c8 optimization
+24b9b13 small change
+be77444 small change
+0db38ee html data
+e49de54 dynamic response handling
+732e783 small refactoring
+bd0c866 merge + refactoring
+18c6e2b playback fix
+205d0cb wb mode fixed
+8880090 client id for logging
+1b17f6a dependency fix
+a00ad88 speex 16khz
+a558249 removed clientid from request info
+08c2d41 client id in request info
+1871279 buffering fixed
+ff98a5a eoa fixed
+a3d612f error messages, buffering
+a77eecb https
+3727fc5 error msg
+1cf7ea2 proxy headers
+77752e9 initial play recording
+865bb7c cleanup
+f5eef9a speec synthesis + AudioContext bug
+11930e1 small bug fixes
+514a8b8 client id, firefox support
+639f9ba 0.0.6
+bc70ded Demo ui
+2e32372 0.0.5
+f29ec84 merge
+4553b13 websocket refactoring
+69a13db 0.0.4
+febc882 comments
+095b9ed text search onError
+b910de7 reorganize
+5e30a51 0.0.3
+ea2fbd1 client info can be passed from front-end
+2115973 small changes
+69bb29a project
+98ce86b project setup
+a065b97 project setup
+dc03855 0.0.2
+ac7c730 npm modules initial
+a392bb8 refactoring
+ad7c5d5 conversation state example 2, request info example
+79792b6 initial conversation state
+b1d4349 refactoring
+1702d4a cleanup
+02f2661 reorganize
+223408f package.json
+0472c65 reorganize
+59d8aa7 cleanup
+8fb0707 event dispatcher
+36ac083 comments
+b03c300 ui
+2c3c1d8 ui change
+a3990eb test page
+6840bb2 cleanup
+10cfc8d small fix:
+5429068 searchInfo
+0fce685 text search proxy
+1707473 authentication
+8978972 stream stop fixed
+1f36b1d initial search state
+550b485 text initial CORS
+3be4a1b small changes
+7408f9b refactoring
+9fb27ff renaming
+c954d8c ?
+c7a1856 listeners, state/event
+686e3ba es6 classes, simple event dispatcher
+18e47f1 VoiceSearch files added
+b4bce04 VoiceSearch initial
+624dbba vad
+1e172d6 fixed audio source connection
+000186d refactoring'
+f2ceeeb refactoring
+7438a7e refactoring
+5e1ca12 refactoring
+4672f9c cleanup
+e9b827c initial
+
+

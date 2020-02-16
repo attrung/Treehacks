@@ -17,14 +17,15 @@
 }
 
 #webcam-container {
-  width: 370px;
+  width: 520px;
   background: #ccc;
   text-align: center;
-  margin: auto;
+  margin: auto 30px;
+  margin-top: 50px;
 }
 
 body {
-  background: url(https://i.ytimg.com/vi/4l6J5jhRgos/maxresdefault.jpg) no-repeat center center fixed;
+  background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,7 +33,7 @@ body {
 }
 
 #title {
-  color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+  color: #A9A9A9; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
 }
 
 .button {
@@ -41,7 +42,7 @@ body {
   padding: 4px 0;
 
   position: absolute;
-  left: 50%;
+  left: 25%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 3px;
@@ -77,18 +78,18 @@ body {
   width: 600px;
   background: rgb(0,0,0,0);
   text-align: center;
-  margin: auto;
-  color: white;
+  margin: auto 30px;
+  color: black;
   font-size: 30px;
 }
 
 #label-container2 {
-  padding-top: 30px;
+  padding-top: 60px;
   width: 600px;
   background: rgb(0,0,0,0);
   text-align: center;
-  margin: auto;
-  color: white;
+  margin: auto 30px;
+  color: black;
   font-size: 30px;
 }
 
@@ -97,4 +98,32 @@ span {
     text-transform: uppercase;
     letter-spacing: 0;
     font-size: 35px;
+}
+
+#classification {
+  float:left
+}
+
+#voice-assist {
+  float:left;
+  width: 500px;
+  margin-left: 90px;
+  margin-top: 100px;
+}
+
+#infoJSON{
+  opacity: 0;
+}
+
+textarea {
+  background: transparent;
+  color: white;
+  border: 0 none;
+  font-size: 5em;
+}
+
+#responseJSON {
+  color: black;
+  width: 500px;
+  font-size: 20px;
 }
