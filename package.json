@@ -1,5 +1,5 @@
 {
-  "name": "treehacks",
+  "name": "trash-classifier",
   "version": "1.0.0",
   "description": "App that finds best way to travel",
   "main": "app.js",
@@ -8,7 +8,7 @@
     "deplot": "gcloud app deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Trung Nguyen, Gacoka Mbui",
   "license": "ISC",
   "dependencies": {
     "@teachablemachine/image": "^0.8.4",
@@ -19,5 +19,17 @@
     "express": "^4.17.1",
     "houndify": "^3.1.1",
     "socket.io": "^2.3.0"
-  }
+  },
+  "engines": {
+    "node": "13.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nguyen-ATrung/Treehacks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nguyen-ATrung/Treehacks/issues"
+  },
+  "homepage": "https://github.com/Nguyen-ATrung/Treehacks#readme"
 }
